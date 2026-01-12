@@ -1,0 +1,23 @@
+* {
+	font-family: sans-serif;
+}
+
+#banner {
+	background-color: #33b;
+	color: #fff;
+	position: fixed;
+	top: 0;
+	left: 0;
+	right: 0;
+	display: flex;
+	justify-content: space-between;
+	padding: 0 1em;
+}
+
+#menu-button {
+	background-color: transparent;
+	border: none;
+	}
+	#menu-button img {
+		filter: invert();
+}
