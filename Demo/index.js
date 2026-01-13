@@ -1,3 +1,15 @@
+var tab = "tasks";
+
+function toggleMenu() {
+	const menu = document.getElementById("menu");
+	if (menu.style.width === "160px") {
+		menu.style.width = "0";
+	} else {
+		menu.style.width = "160px";
+	}
+}
+
+
 const days = ["Sunday", "Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday"];
 const months = ["January", "February", "March", "April", "May", "June", "July", "August", "September", "October", "November", "December"];
 
