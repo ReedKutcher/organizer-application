@@ -4,6 +4,7 @@
 		<meta charset="utf-8">
 		<title>Organizer Application Demo</title>
 		<link rel="stylesheet" href="styles.css">
+		<link rel="stylesheet" href="fonts.css">
 	</head>
 	<body>
 		<div id="banner">
@@ -12,14 +13,13 @@
 			<p id="banner-clock">Error Retrieving Time</p>
 		</div>
 		<div id="menu">
-			<button type="button">Calendar</button>
-			<button type="button">Tasks</button>
-			<button type="button">Settings</button>
-			<button type="button">Connect</button>
+			<button type="button" onclick="switchTab('calendar')">Calendar</button>
+			<button type="button" onclick="switchTab('tasks')">Tasks</button>
+			<button type="button" onclick="switchTab('settings')">Settings</button>
+			<button type="button" onclick="switchTab('connect')">Connect</button>
 		</div>
-		<div id="main">
-			
-		</div>
+		<iframe id="content" src="home.html"></iframe>
+		<button type="button" id="demo-home" onclick="switchTab('home')">go to demo homepage</button>
 		<script src="index.js"></script>
 	</body>
 </html>

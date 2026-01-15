@@ -1,7 +1,3 @@
-* {
-	font-family: sans-serif;
-}
-
 #banner {
 	background-color: #33b;
 	color: #fff;
@@ -41,7 +37,7 @@
 	top: 3em;
 	left: 0;
 	bottom: 0;
-	width: 160px;
+	width: 0;
 	background-color: #bbb;
 	overflow: hidden;
 	transition: 0.5s;
@@ -58,7 +54,32 @@
 }
 
 #main {
-	margin-left: 160px;
+	margin-left: 0;
 	margin-top: 3em;
 	border: 4px solid #f0f;
+}
+
+#content {
+	position: fixed;
+	top: 3em;
+	left: 0;
+	right: 0;
+	bottom: 0;
+	width: 100%;
+	height: 100%;
+	transition: 0.5s;
+	border: none;
+}
+
+#demo-home {
+	position: fixed;
+	bottom: 0;
+	right: 0;
+	color: #bbb;
+	border: none;
+	background: transparent;
+	}
+	#demo-home:hover {
+		color: #777;
+		text-decoration: underline;
 }

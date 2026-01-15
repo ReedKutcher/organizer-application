@@ -1,11 +1,19 @@
-var tab = "tasks";
+var tab = "home";
+
+function switchTab(tabName) {
+	const content = document.getElementById("content");
+	content.src = `${tabName}.html`;
+}
 
 function toggleMenu() {
 	const menu = document.getElementById("menu");
+	const style = document.getElementById("content");
 	if (menu.style.width === "160px") {
 		menu.style.width = "0";
+		content.style.left = "0";
 	} else {
 		menu.style.width = "160px";
+		content.style.left = "160px";
 	}
 }
 

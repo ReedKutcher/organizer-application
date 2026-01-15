@@ -1,0 +1,11 @@
+.due-past {
+	color: #f00;
+}
+
+.due-present {
+	font-weight: bold;
+}
+
+input[type=checkbox]:checked + label {
+	text-decoration: line-through;
+}
