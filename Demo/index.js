@@ -2,24 +2,33 @@ var tab = "home";
 
 function switchTab(tabName) {
 	const content = document.getElementById("content");
+	const banner = document.getElementById("banner");
+	const menu = document.getElementById("menu");
 	content.src = `${tabName}.html`;
 	tab = tabName;
 	toggleMenu();
+	if (tabName === "calendar") {
+		banner.style.minHeight = "12em";
+		content.style.top = "12em";
+		menu.style.top = "12em";
+	} else {
+		banner.style.minHeight = "3em";
+		content.style.top = "3em";
+		menu.style.top = "3em";
+	}
 }
 
 function toggleMenu() {
 	const menu = document.getElementById("menu");
 	const style = document.getElementById("content");
-	if (menu.style.width === "30%") {
+	if (menu.style.width === "10em") {
 		menu.style.width = "0";
-		content.style.left = "10%";
-		content.style.right = "10%";
-		content.style.width = "80%";
+		content.style.left = "5em";
+		content.style.right = "5em";
 	} else {
-		menu.style.width = "30%";
-		content.style.left = "30%";
+		menu.style.width = "10em";
+		content.style.left = "10em";
 		content.style.right = "0";
-		content.style.width = "70%";
 	}
 }
 

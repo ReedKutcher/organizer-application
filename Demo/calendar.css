@@ -1,0 +1,20 @@
+table {
+	width: 100%;
+	table-layout: fixed;
+	border: none;
+	margin: 0;
+}
+
+tbody {
+	height: 60em;
+}
+
+td {
+	text-align: start;
+}
+
+th, td {
+	background-color: #bbb;
+	border: none;
+	padding: 0.5em;
+}
