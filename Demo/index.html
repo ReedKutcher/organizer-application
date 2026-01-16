@@ -7,19 +7,21 @@
 		<link rel="stylesheet" href="fonts.css">
 	</head>
 	<body>
-		<div id="banner">
-			<button type="button" id="menu-button" onclick="toggleMenu()"><img src="icons/hamburger-menu.svg"></button>
-			<p id="banner-date">Error Retrieving Date</p>
-			<p id="banner-clock">Error Retrieving Time</p>
+		<div id="main">
+			<div id="banner">
+				<button type="button" id="menu-button" onclick="toggleMenu()"><img src="icons/hamburger-menu.svg"></button>
+				<p id="banner-date">Error Retrieving Date</p>
+				<p id="banner-clock">Error Retrieving Time</p>
+			</div>
+			<div id="menu">
+				<button type="button" onclick="switchTab('calendar')">Calendar</button>
+				<button type="button" onclick="switchTab('tasks')">Tasks</button>
+				<button type="button" onclick="switchTab('settings')">Settings</button>
+				<button type="button" onclick="switchTab('connect')">Connect</button>
+			</div>
+			<iframe id="content" src="home.html"></iframe>
+			<button type="button" id="demo-home" onclick="switchTab('home')">go to demo homepage</button>
+			<script src="index.js"></script>
 		</div>
-		<div id="menu">
-			<button type="button" onclick="switchTab('calendar')">Calendar</button>
-			<button type="button" onclick="switchTab('tasks')">Tasks</button>
-			<button type="button" onclick="switchTab('settings')">Settings</button>
-			<button type="button" onclick="switchTab('connect')">Connect</button>
-		</div>
-		<iframe id="content" src="home.html"></iframe>
-		<button type="button" id="demo-home" onclick="switchTab('home')">go to demo homepage</button>
-		<script src="index.js"></script>
 	</body>
 </html>

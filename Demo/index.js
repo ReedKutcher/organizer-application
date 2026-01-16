@@ -3,17 +3,23 @@ var tab = "home";
 function switchTab(tabName) {
 	const content = document.getElementById("content");
 	content.src = `${tabName}.html`;
+	tab = tabName;
+	toggleMenu();
 }
 
 function toggleMenu() {
 	const menu = document.getElementById("menu");
 	const style = document.getElementById("content");
-	if (menu.style.width === "160px") {
+	if (menu.style.width === "30%") {
 		menu.style.width = "0";
-		content.style.left = "0";
+		content.style.left = "10%";
+		content.style.right = "10%";
+		content.style.width = "80%";
 	} else {
-		menu.style.width = "160px";
-		content.style.left = "160px";
+		menu.style.width = "30%";
+		content.style.left = "30%";
+		content.style.right = "0";
+		content.style.width = "70%";
 	}
 }
 
