@@ -6,15 +6,40 @@ table {
 }
 
 tbody {
-	height: 60em;
+	min-height: calc(100vh - 16em);
 }
 
 td {
 	text-align: start;
+	vertical-align: top;
+	font-size: 12px;
 }
 
 th, td {
 	background-color: #bbb;
 	border: none;
 	padding: 0.5em;
+}
+
+.past-month {
+	color: #777;
+}
+
+.event-green {
+	color: #070;
+	font-size: 12px;
+}
+
+.event-red {
+	color: #700;
+	font-size: 12px;
+}
+
+.event-blue {
+	color: #007;
+	font-size: 12px;
+}
+
+.current-day {
+	outline: 4px solid #f00;
 }

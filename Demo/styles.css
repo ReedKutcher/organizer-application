@@ -15,10 +15,24 @@ body {
 	padding: 0 1em;
 	min-height: 3em;
 	transition: 0.5s;
+	align-items: start;
 }
 #banner * {
 	padding: 0;
-	margin: auto 0;
+}
+
+#banner-clock {
+	margin: 0.8em;
+}
+
+#menu-button {
+	margin: 0.5em;
+}
+
+#banner-date {
+	align-self: center;
+	margin: 0;
+	transition: font-size 0.5s;
 }
 
 #menu-button {

@@ -9,15 +9,15 @@
 	</head>
 	<body>
 		<table border="1">
-			<thead>
+			<thead onresize="checkDayWidth()">
 				<tr>
-					<th>Sunday</th>
-					<th>Monday</th>
-					<th>Tuesday</th>
-					<th>Wednesday</th>
-					<th>Thursday</th>
-					<th>Friday</th>
-					<th>Saturday</th>
+					<th>Sun</th>
+					<th>Mon</th>
+					<th>Tue</th>
+					<th>Wed</th>
+					<th>Thu</th>
+					<th>Fri</th>
+					<th>Sat</th>
 				</tr>
 			</thead>
 			<tbody>
@@ -28,44 +28,44 @@
 						<td>30</td>
 						<td>31</td>
 					</span>
-					<td>1</td>
-					<td>2</td>
+					<td>1<br><span class="event-red">Winter Break</span></td>
+					<td>2<br><span class="event-red">Winter Break</span></td>
 					<td>3</td>
 				</tr>
 				<tr>
 					<td>4</td>
-					<td>5</td>
-					<td>6</td>
-					<td>7</td>
-					<td>8</td>
+					<td>5<br><span class="event-green">Robotics 1:45-3:45</span></td>
+					<td>6<br><span class="event-green">Robotics 1:45-4:30</span></td>
+					<td>7<br><span class="event-green">Robotics 1:45-4:00</span></td>
+					<td>8<br><span class="event-green">Robotics 1:45-7:45</span></td>
 					<td>9</td>
-					<td>10</td>
+					<td>10<br><span class="event-green">Robotics 8:00am-8:00pm</span></td>
 				</tr>
 				<tr>
 					<td>11</td>
-					<td>12</td>
-					<td>13</td>
-					<td>14</td>
-					<td>15</td>
+					<td>12<br><span class="event-green">Robotics 1:45-3:45</span><br><span class="event-blue">NHS 6:30am</span></td>
+					<td>13<br><span class="event-green">Robotics 1:45-4:30</span></td>
+					<td>14<br><span class="event-green">Robotics 1:45-4:00<br>Nuclear Reactor Tour 2:30-4:00</span></td>
+					<td>15<br><span class="event-green">Robotics 1:45-4:00</span></td>
 					<td>16</td>
-					<td>17</td>
+					<td>17<br><span class="event-green">Robotics 10:00-2:00</span></td>
 				</tr>
 				<tr>
 					<td>18</td>
-					<td>19</td>
-					<td>20</td>
-					<td>21</td>
-					<td>22</td>
-					<td>23</td>
+					<td>19<br><span class="event-red">Martin Luther King Jr. Day</span></td>
+					<td>20<br><span class="event-green">Robotics 1:45-4:00</span></td>
+					<td>21<br><span class="event-red">Exams: Topics in Lit & Spanish 5</span><br><span class="event-green">Robotics 12:00-3:00</span></td>
+					<td class="current-day">22<br><span class="event-red">Exams: Digital Electronics & Engineering Essentials</span><br><span class="event-green">Robotics 12:00-3:00<br>Design Review Panel 2:30-3:30</span></td>
+					<td>23<br><span class="event-red">Exams: AP Statistics & AP Chemistry</span><br><span class="event-green">Robotics 12:00-3:00</span></td>
 					<td>24</td>
 				</tr>
 				<tr>
 					<td>25</td>
-					<td>26</td>
-					<td>27</td>
-					<td>28</td>
-					<td>29</td>
-					<td>30</td>
+					<td>26<br><span class="event-red">Exams: AP Calculus AB & Intro to Computing and Data Science</span><br><span class="event-green">Robotics 12:00-3:00</span></td>
+					<td>27<br><span class="event-green">Robotics 1:45-4:00</span></td>
+					<td>28<br><span class="event-green">Robotics 1:45-4:00<br>Middle School TSA 6:00-7:30</span></td>
+					<td>29<br><span class="event-green">In-School URI Engineering Field Trip<br>Robotics 1:45-4:00</span></td>
+					<td>30<br><span class="event-green">Robotics 1:45-6:00</span></td>
 					<td>31</td>
 				</tr>
 			</tbody>
