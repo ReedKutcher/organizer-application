@@ -16,6 +16,7 @@ body {
 	min-height: 3em;
 	transition: 0.5s;
 	align-items: start;
+	white-space: nowrap;
 }
 #banner * {
 	padding: 0;
@@ -52,7 +53,7 @@ body {
 		height: 2em;
 }
 
-#menu {
+.menu {
 	display: flex;
 	flex-direction: column;
 	position: absolute;
@@ -63,16 +64,27 @@ body {
 	background-color: #bbb;
 	overflow: hidden;
 	transition: 0.5s;
+	white-space: nowrap;
 	}
-	#menu button {
+	.menu button {
+		display: flex;
+		flex-direction: horizontal;
 		border: none;
 		background-color: transparent;
-		padding: 1em 0;
+		padding: 0;
+		height: 3em;
 		margin: 4px 4px 0;
 		border-radius: 0.5em;
+		align-items: center;
 		}
-		#menu button:hover {
-			background-color: #777
+		.menu button:hover {
+			background-color: #777;
+	}
+	.menu img {
+		width: 1.5em;
+		height: 1.5em;
+		margin: 0.5em;
+		padding: 0;
 }
 
 #main {
@@ -83,6 +95,7 @@ body {
 	top: 0;
 	bottom: 0;
 	box-shadow: 0 0 20px #000;
+	overflow: hidden;
 }
 
 #content {
@@ -109,4 +122,9 @@ body {
 	#demo-home:hover {
 		color: #777;
 		text-decoration: underline;
+}
+
+.align-right {
+	margin-left: auto;
+	margin-right: 0.5em;
 }

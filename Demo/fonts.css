@@ -10,3 +10,16 @@ h1 {
 h2 {
 	font-size: 24px;
 }
+
+select {
+	width: 8em;
+	height: 2em;
+	background-color: #bbb;
+	border: none;
+	border-radius: 0.5em;
+	padding: 0.3em 0.5em;
+}
+
+select, label {
+	font-weight: bold;
+}

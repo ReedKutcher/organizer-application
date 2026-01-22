@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title>settings</title>
+		<link href='https://fonts.googleapis.com/css?family=IBM Plex Sans' rel='stylesheet'>
+		<link rel="stylesheet" href="settings-appearance.css">
+		<link rel="stylesheet" href="fonts.css">
+	</head>
+	<body>
+		<h1>Notifications</h1>
+		<hr>
+		<input type="checkbox" name="enable" id="enabler" oninput="grayOut()" checked>
+			<label for="enable">Enable Notifications</label>
+		<hr>
+		<span id="enable-dependent">
+			<h2>Sound</h2>
+			<select name="sound" id="sound-select">
+				<option value="beep">Beep</option>
+				<option value="bell">Bell</option>
+				<option value="music" selected>Music</option>
+			</select>
+		</span>
+		<hr>
+		<input type="submit" value="Apply">
+		<script src="settings-notifications.js"></script>
+	</body>
+</html>

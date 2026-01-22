@@ -3,11 +3,38 @@
 	<head>
 		<meta charset="utf-8">
 		<title>connect</title>
+		<link href='https://fonts.googleapis.com/css?family=IBM Plex Sans' rel='stylesheet'>
 		<link rel="stylesheet" href="connect.css">
 		<link rel="stylesheet" href="fonts.css">
 	</head>
 	<body>
 		<h1>Connect</h1>
-		<button type="button">Connect Device</button>
+		<button type="button" onclick="popup()">Connect Device</button>
+		<p>To connect a device, first click the "connect device" button. A menu will provide you with the following on-screen prompts:</p>
+		<ol>
+			<li>Ensure that the desired device is available to connect with.</li>
+			<li>Select the desired device from the list of available devices.</li>
+			<li>Click "Test". If the correct device is selected, it will begin to blink (indicator light reciever) or show confirmation dialogue (phone)</li>
+			<li>If the correct device indicates that it has been selected, press "Confirm". If not, select and test another device from the menu until the desired device is found.</li>
+		</ol>
+		<div id="popup">
+			<ol>
+				<li>Ensure that the desired device is available to connect with.</li>
+				<li>Select the desired device from the list of available devices.</li>
+				<li>Click "Test". If the correct device is selected, it will begin to blink (indicator light reciever) or show confirmation dialogue (phone)</li>
+				<li>If the correct device indicates that it has been selected, press "Confirm". If not, select and test another device from the menu until the desired device is found.</li>
+			</ol>
+			
+			<div id="available-devices">
+				<button type="button">Example Phone</button>
+				<button type="button">IndicatorLightsReciever0</button>
+				<button type="button">IndicatorLightsReciever1</button>
+			</div>
+			
+			<button type="button" onclick = "popdown()" id="cancel">cancel</button>
+			<button type="button" id="test">test</button>
+			<button type="button" onclick = "popdown()" id="confirm">confirm</button>
+		</div>
+		<script src="connect.js"></script>
 	</body>
 </html>

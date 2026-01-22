@@ -14,11 +14,16 @@
 				<p id="banner-date">Error Retrieving Date</p>
 				<p id="banner-clock">Error Retrieving Time</p>
 			</div>
-			<div id="menu">
-				<button type="button" onclick="switchTab('calendar')">Calendar</button>
-				<button type="button" onclick="switchTab('tasks')">Tasks</button>
-				<button type="button" onclick="switchTab('settings')">Settings</button>
-				<button type="button" onclick="switchTab('connect')">Connect</button>
+			<div id="main-menu" class="menu">
+				<button type="button" onclick="switchTab('calendar')"><img src="icons/calendar.svg">Calendar</button>
+				<button type="button" onclick="switchTab('tasks')"><img src="icons/tasks.svg">Tasks</button>
+				<button type="button" onclick="toggleSettingsMenu()"><img src="icons/settings.svg">Settings<span class="align-right">&gt;</span></button>
+				<button type="button" onclick="switchTab('connect')"><img src="icons/connect.svg">Connect</button>
+			</div>
+			<div id="settings-menu" class="menu">
+				<button type="button" onclick="toggleSettingsMenu()">&ensp; &lt; &emsp; Back</button>
+				<button type="button" onclick="switchTab('settings-appearance')"><img src="icons/settings-appearance.svg">Appearance</button>
+				<button type="button" onclick="switchTab('settings-notifications')"><img src="icons/settings-notifications.svg">Notifications</button>
 			</div>
 			<iframe id="content" src="home.html"></iframe>
 			<button type="button" id="demo-home" onclick="switchTab('home')">go to demo homepage</button>
