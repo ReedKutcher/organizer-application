@@ -1,0 +1,28 @@
+* {
+    background-color: #fff;
+    color: #000;
+    border-radius: 0;
+    border-width: 0;
+    margin: 0;
+    padding: 0;
+    font-family: 'IBM Plex Sans';
+}
+
+.banner {
+    background-color: #33b;
+    color: #fff;
+    min-height: 48px;
+}
+
+.menu {
+    background-color: #bbb;
+    min-width: 128px;
+}
+
+button {
+    margin: 4px;
+    min-width: 32px;
+    min-height: 32px;
+    background-color: transparent;
+    color: #fff;
+}
