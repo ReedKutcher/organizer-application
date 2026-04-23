@@ -20,6 +20,7 @@ static void activate(GtkApplication *app, gpointer user_data) {
     GtkWidget *bannerFrame;
     GtkWidget *menuFrame;
     GtkWidget *menuRevealer;
+    GtkWidget *contentFrame;
 
     GtkCssProvider *provider;
 
@@ -32,7 +33,7 @@ static void activate(GtkApplication *app, gpointer user_data) {
 
     window = gtk_application_window_new(app);
     gtk_window_set_title(GTK_WINDOW(window), "Organizer Application");
-    gtk_window_set_default_size(GTK_WINDOW(window), 1920, 1080);
+    gtk_window_set_default_size(GTK_WINDOW(window), 1080, 1920);
 
     controller = gtk_event_controller_key_new();
     g_signal_connect(controller, "key-pressed", G_CALLBACK(on_key_pressed), GTK_WINDOW(window));
@@ -61,9 +62,16 @@ static void activate(GtkApplication *app, gpointer user_data) {
     gtk_revealer_set_child(GTK_REVEALER(menuRevealer), menuFrame);
     gtk_box_append(GTK_BOX(menuSeparator), menuRevealer);
 
+    contentFrame = gtk_frame_new(NULL);
+    gtk_widget_set_hexpand(contentFrame, TRUE);
+    gtk_widget_set_vexpand(contentFrame, TRUE);
+    gtk_box_append(GTK_BOX(menuSeparator), contentFrame);
+    gtk_widget_add_css_class(contentFrame, "content");
+
     menuButton = gtk_button_new_from_icon_name("open-menu-symbolic");
     gtk_widget_set_halign(menuButton, GTK_ALIGN_START);
     gtk_widget_set_valign(menuButton, GTK_ALIGN_START);
+    gtk_widget_add_css_class(menuButton, "menu-button");
     g_signal_connect(menuButton, "clicked", G_CALLBACK(printHello), GTK_REVEALER(menuRevealer));
     gtk_frame_set_child(GTK_FRAME(bannerFrame), menuButton);
 
