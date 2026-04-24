@@ -1,0 +1,83 @@
+:root {
+    --window-bg-color: #000;
+    --banner-color: #33b;
+    --content-bg-color: #fff;
+    --banner-text-color: #fff;
+    --content-text-color: #000;
+    --menu-color: #bbb;
+    --menu-button-unhover-color: transparent;
+    --menu-button-hover-color: #0003;
+
+    --banner-height: 60px;
+    --menu-width: 240px;
+    --menu-button-size: 44px;
+    --menu-button-icon-size: 32px;
+    --menu-button-border-radius: 8px;
+    --date-font-size: 16px;
+    --time-font-size: 16px;
+}
+
+* {
+    color: #000;
+    margin: 0;
+    padding: 0;
+    font-family: 'IBM Plex Sans';
+    box-shadow: none;
+    text-shadow: none;
+    background: none;
+    border: none;
+    border-radius: 0;
+    min-width: 0;
+    min-height: 0;
+    font-size: 1em;
+}
+
+window.background {
+    background-color: var(--window-bg-color);
+}
+
+.banner {
+    background-color: var(--banner-color);
+    color: var(--banner-text-color);
+    min-height: var(--banner-height);
+}
+
+.menu {
+    background-color: var(--menu-color);
+    min-width: var(--menu-width);
+}
+
+.menu-button {
+    margin: calc((var(--banner-height) - var(--menu-button-size)) * 0.5);
+    min-width: var(--menu-button-size);
+    min-height: var(--menu-button-size);
+    background-color: var(--menu-button-unhover-color);
+    border-radius: var(--menu-button-border-radius);
+}
+    .menu-button:hover {
+        background-color: #0003;
+    }
+    .menu-button image {
+        color: var(--banner-text-color);
+        -gtk-icon-style: symbolic;
+        -gtk-icon-size: var(--menu-button-icon-size);
+    }
+
+.content {
+    background-color: var(--content-bg-color);
+    color: var(--content-text-color);
+}
+
+.date {
+    font-size: var(--date-font-size);
+    color: var(--banner-text-color);
+    margin: var(--date-font-size);
+    font-weight: bold;
+}
+
+.time {
+    font-size: var(--time-font-size);
+    color: var(--banner-text-color);
+    margin: var(--time-font-size);
+    font-weight: bold;
+}
