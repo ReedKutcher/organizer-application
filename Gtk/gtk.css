@@ -5,8 +5,12 @@
     --banner-text-color: #fff;
     --content-text-color: #000;
     --menu-color: #bbb;
-    --menu-button-unhover-color: transparent;
-    --menu-button-hover-color: #0003;
+    --menu-button-color: transparent;
+    --menu-button-hover-color: #337;
+    --menu-item-color: #999;
+    --menu-item-hover-color: #77b;
+    --menu-item-outline-color: #33b;
+    --menu-item-text-color: #000;
 
     --banner-height: 60px;
     --menu-width: 240px;
@@ -15,6 +19,12 @@
     --menu-button-border-radius: 8px;
     --date-font-size: 16px;
     --time-font-size: 16px;
+    --menu-item-border-radius: 8px;
+    --menu-item-margin: 8px;
+    --menu-item-height: 44px;
+    --menu-item-icon-size: 32px;
+    --menu-item-font-size: 16px;
+    --menu-item-padding: 6px;
 }
 
 * {
@@ -30,6 +40,7 @@
     min-width: 0;
     min-height: 0;
     font-size: 1em;
+    outline-offset: 0;
 }
 
 window.background {
@@ -51,7 +62,7 @@ window.background {
     margin: calc((var(--banner-height) - var(--menu-button-size)) * 0.5);
     min-width: var(--menu-button-size);
     min-height: var(--menu-button-size);
-    background-color: var(--menu-button-unhover-color);
+    background-color: var(--menu-button-color);
     border-radius: var(--menu-button-border-radius);
 }
     .menu-button:hover {
@@ -81,3 +92,26 @@ window.background {
     margin: var(--time-font-size);
     font-weight: bold;
 }
+
+.menu-item {
+    background-color: var(--menu-item-color);
+    border-radius: var(--menu-item-border-radius);
+    margin: var(--menu-item-margin) var(--menu-item-margin) 0;
+    min-height: var(--menu-item-height);
+}
+    .menu-item:hover {
+        outline: 4px solid var(--menu-item-outline-color);
+        background-color: var(--menu-item-hover-color);
+    }
+    .menu-item image {
+        color: var(--menu-item-text-color);
+        -gtk-icon-style: symbolic;
+        -gtk-icon-size: var(--menu-item-icon-size);
+        margin: var(--menu-item-padding);
+    }
+    .menu-item label {
+        font-size: var(--menu-item-font-size);
+        color: var(--menu-item-text-color);
+        margin: var(--menu-item-padding);
+        font-weight: bold;
+    }
